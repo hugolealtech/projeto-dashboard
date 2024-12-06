@@ -1,4 +1,28 @@
-<h2>Dashboard</h2>
-<p>Bem-vindo à área restrita!</p>
+<app-header></app-header>
+<div class="dashboard-container">
 
-<button (click)="onLogout()">Logout</button>
+
+    <aside class="sidebar">
+  
+      <h2>Menu</h2>
+      
+      <ul>
+        <li>Clientes</li>
+        <li>Processos</li>
+        <li>Receita</li>
+        <li>Avisos</li>
+        <li>Publicações</li>
+      </ul>
+  
+    </aside>
+  
+    <main class="main-content">
+      <h2>Dashboard - Administrativo</h2>
+      <p>Bem-vindo à área restrita!</p>
+  
+      <button onclick="onLogout()">Logout</button>
+    </main>
+  
+  </div>
+  <app-footer></app-footer>
+  

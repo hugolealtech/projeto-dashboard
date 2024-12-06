@@ -1,8 +1,13 @@
-<nav class="navbar">
 
+
+  <!-- Navbar -->
+  <nav class="nav-container">
+    
     <a routerLink="/login" class="nav-link">Login</a>
     <a routerLink="/dashboard" *ngIf="authService.isAuthenticated()" class="nav-link">Dashboard</a>
+    <a routerLink="/administrativo" class="nav-link">administrativo</a>
 
     <button (click)="onLogout()" *ngIf="authService.isAuthenticated()" class="nav-button">Logout</button>
     
   </nav>
+</header>

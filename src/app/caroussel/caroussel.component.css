@@ -1,0 +1,120 @@
+/* carousel.component.css */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    margin-top: 5px;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    animation: slide 20s infinite;
+  }
+  
+  .carousel-item {
+    position: relative;
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+   
+  }
+  
+  .carousel-item img {
+    width: 50%;  
+    justify-content: center;
+    border-radius: 10px;
+    
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    bottom: 50px; /* Posiciona logo abaixo da imagem */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta o ponto de referência ao centro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%; /* Ajuste para largura maior em telas maiores */
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    color: #e8d6be;
+    padding: 10px;
+    font-size: 1vw; /* Usar unidades relativas para garantir responsividade */
+    transition: 1.5s;
+  }
+  
+  .carousel-caption:hover {
+    position: absolute;
+    bottom: 50px;
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta o ponto de referência ao centro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 35%; /* Aumenta a largura ao passar o mouse */
+    text-align: center;
+    
+    background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    
+    padding: 10px;
+    font-size: 1.2vw; /* Aumenta a fonte no hover */
+    transition: 1.5s;
+  }
+  .caroussel-item p:hover{
+    color: #bb935d;
+    text-decoration: underline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+  }
+  
+  /* Responsividade para telas pequenas */
+  @media (max-width: 768px) {
+    .carousel-caption {
+      width: 95%; /* Largura maior para telas menores */
+      font-size: 1vw; /* Fonte maior em telas menores */
+    }
+  
+    .carousel-caption:hover {
+      width: 40%; /* Largura maior no hover */
+      font-size: 2vw; /* Fonte ainda maior no hover */
+    }
+  }
+  a{
+    text-decoration: none;
+    color: #bb935d;
+  }
+  @media (max-width: 480px) {
+    .carousel-caption {
+      width: 20%; /* Largura ainda maior para telas muito pequenas */
+      font-size: 2vw; /* Fonte muito maior para dispositivos pequenos */
+      display: flex;
+      align-items: center;
+    }
+    a{
+      text-decoration: none;
+      color: #bb935d;
+    }
+  
+    .carousel-caption:hover {
+      width: 30%; /* Largura muito maior no hover */
+      height: 5%;
+      display: flex;
+      align-items: center;
+      font-size: 3vw; /* Fonte ainda maior no hover */
+    }
+  }
+  
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }    /* Mantém a primeira imagem visível por mais tempo */
+    40% { transform: translateX(-100%); }
+    60% { transform: translateX(-100%); } /* Mantém a segunda imagem visível por mais tempo */
+    80% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+  }

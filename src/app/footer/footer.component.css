@@ -1,0 +1,52 @@
+footer{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0c4037;
+    margin-top: 20px;
+    color: #ffff;
+    text-align: center;
+    padding-top: 80px;
+}
+a{
+    text-decoration: underline;
+    color: #BB935D;
+    transition: 1s;
+}
+a:hover{
+    text-decoration: underline;
+    color: #BB935D;
+    font-size: 20px; 
+    transition: 1s;
+}
+
+.navBar{
+    width: 100%;
+    background-color: #0c4037;
+}
+.navBar nav{
+    width: 100%;
+    height: 40%;
+    background-color: #0c4037;
+    display: flex;
+    align-items: center; 
+    justify-content:center;
+    gap: 40px;
+   
+}
+hr{
+    width: 40%;
+    text-decoration: #BB935D;
+    color: #BB935D;
+    
+}
+nav {
+   
+}
+#iconWhatsapp{
+    width: 20px;
+
+}
